@@ -1,0 +1,32 @@
+/* index.css */
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Shift content to the top */
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #f6a8a8, #c7b3f3); /* Stylish gradient background */
+  margin-top: 150px; /* Add a top margin of 150px */
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+

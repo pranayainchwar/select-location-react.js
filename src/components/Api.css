@@ -1,0 +1,68 @@
+/* Api.css */
+
+/* Your existing styles... */
+
+/* Style the select elements */
+select {
+  height: 40px;
+  font-size: 18px;
+  padding: 5px 15px; /* Increased horizontal padding for better spacing */
+  margin: 10px 0; /* Added spacing around the dropdown box */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  appearance: none; /* Remove default arrow on some browsers */
+  -webkit-appearance: none; /* Remove default arrow on iOS Safari */
+  -moz-appearance: none; /* Remove default arrow on Firefox */
+  background-color: #fff;
+  display: block; /* Set display property to block */
+  width: 100%; /* Set the dropdown width to fill its container */
+  box-sizing: border-box; /* Include padding and border in the width */
+  overflow-y: hidden; /* Hide the vertical scrollbar */
+}
+
+/* Style the dropdown container to control overflow */
+.select-container {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* Adjust the width of the container as needed */
+}
+
+/* Style the dropdown arrow */
+.select-container::after {
+  content: '▼'; /* Custom dropdown arrow character */
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Increased the distance from the right for better alignment */
+  transform: translateY(-50%);
+  font-size: 16px; /* Reduced the arrow size slightly */
+  pointer-events: none;
+}
+
+/* Add a scrollbar for the dropdown options */
+select {
+  max-height: 150px; /* Reduce the maximum height of the dropdown options */
+}
+
+/* Style individual options within the dropdown */
+select option {
+  padding: 5px;
+  font-size: 16px; /* Adjust the font size for the options */
+}
+
+/* Style the submit button */
+button {
+  margin-top: 20px;
+  padding: 12px 20px; /* Increase padding to make the button larger */
+  font-size: 18px; /* Increase font size for the button text */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
